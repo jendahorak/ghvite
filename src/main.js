@@ -1,2 +1,5 @@
 const root = document.querySelector('#app');
-root.appendChild(document.createElement('p').appendChild(document.createTextNode('Hello World')));
+const node = document.createTextNode('Hello World');
+const element = document.createElement('h1');
+element.appendChild(node);
+root.appendChild(element);
